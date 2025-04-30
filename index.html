@@ -160,8 +160,8 @@
         <figure>
           <img src="imgs/figure1.png" alt="A line plot that shows rates of officer substantiations over the years." />
           <figcaption>This plot shows that complaints resulting in officer substantiations and those not resulting 
-            in substantiations have grown at similar rates over time. The "Not Substantiated" line consistently stays 
-            above the "Substantiated" line, and the gap between them remains roughly proportional throughout.</figcaption>
+            in substantiations have grown at similar rates over time. The "No Action Taken" line consistently stays 
+            above the "Action Taken" line, and the gap between them remains roughly proportional throughout.</figcaption>
         </figure>
 
         <p>Design Decisions and Rationale:</p>
@@ -172,11 +172,11 @@
             description of the plot in the description. I would rate this decision's earnestness as 1.5.</li>
           <li>Annotations: I really wanted this visualization to agree with the proposition's point that both lines 
             grow proportional to each other, so I emphasized the proportional growth with orange arrows, which show 
-            the scalar by which you can multiply the value at the red line to reach the value at the blue line. 
-            Additionally, I added text which restates that both complaint types accumulate proportionally to each 
-            other. I would rate this decision's earnestness as 2.</li>
+            the scalar by which you can multiply the value at the "Action Taken" line to reach the value at the "No 
+            Action Taken" line. Additionally, I added text which restates that both complaint types accumulate 
+            proportionally to each other. I would rate this decision's earnestness as 2.</li>
           <li>Color: I chose colors that would stand out from each other and be unique. The blue color for the 
-            "Not Substantiated" line is a calm and neutral color, while the red color for the "Substantiated" line
+            "No Action Taken" line is a calm and neutral color, while the red color for the "Action Taken" line
             is a more aggressive color. I chose the arrows to be orange, as orange is distinguishable from both 
             blue and red, and clearly emphasizes the proportionality between the two lines. I would rate this decision's
             earnestness as 2.</li>
@@ -195,11 +195,14 @@
         <p>Design Decisions and Rationale:</p>
 
         <ul>
-          <li>Grouping and aggregation: I created the "No Action Taken" and "Arrest/Summons Issued" categories by grouping
-            similar values together for each category. For example, values in the "Arrest/Summons Issued" category include
-            arrests of any kind, as well as summons of any kind. This makes the category of NYPD officers who have done wrongdoing
-            look larger than it would be if I had separated the arrests and summons into two separate categories. I would rate this decision's
-            earnestness as -1.</li>
+          <li>Grouping and aggregation: I created the "No Action Taken" and "Action Taken" categories by grouping
+            similar values together for each category. For example, values in the "Action Taken" category include
+            arrests of any kind, as well as summons of any kind. This makes the category of NYPD officers who have 
+            done wrongdoing look larger than it would be if I had separated the arrests and summons into two separate 
+            categories. I have also been intentionally vague in naming the "Action Taken" category, and I avoided using
+            the words "arrests" or "summons issued" to make this plot have the same labels as the above persuasive plot.
+            This forces the reader to read more closely to identify that the "Action Taken" category encompasses arrests
+            and court summons, as described in the description of the plot. I would rate this decision's earnestness as -1.5.</li>
           </li>
           <li>Title and description: I made sure to use negative language in my title to persuade the reader that more
             recent years have seen a greater number of NYPD officers being punished for their actions. Using the phrase
@@ -210,7 +213,7 @@
           </li>
           <li>Annotations: I wanted to emphasize that modern generations of officers have been more problematic than
             officers of past years, so I annotated the plot with an orange line at the year 2005, which is when the
-            "Arrest/Summons Issued" line overtakes the "No Action Taken" line. I also added an arrow and text annotation
+            "Action Taken" line overtakes the "No Action Taken" line. I also added an arrow and text annotation
             to make this point clear. The orange line serves a "divisor" between the older and newer years, and makes it 
             easy to see that both lines have clearly not been growing proportionally to each other. I would rate this decision's
             earnestness as 1.5.</li>
@@ -221,7 +224,41 @@
       <section>
         <h2>Final Reflection</h2>
 
-        <p>[WRITE FINAL REFLECTION PARAGRAPHS HERE.]</p>
+        <p>Designing both visualizations was both easier and harder than I had expected. I had a clear vision of what 
+          I wanted both visualizations to argue for, but I encountered difficulty in finding deceptive techniques I could
+          use in my plot against the proposition. I wanted to make both visualizations look very similar to each other so 
+          that it would not be immediately obvious to the reader what the deceptive technique was. This is why I used the same
+          colors for each plot, as well as the same axes and labels. This makes the plots look very similar to each other, even
+          though they are arguing for different sides of the proposition, forcing the reader to look more closely at the plots
+          to identify the differences, which can be found detailed in the description of the plots. The labels "Action Taken" and 
+          "No Action Taken" are the same for both plots and are intentionally vague, as I wanted to use the same labels for both 
+          plots despite both plots conveying different meanings. "Action Taken" and "No Action Taken" are broad, general terms that 
+          still correctly describe the data, but do not give the reader the full picture of what the data is actually showing. 
+          <br>
+          <br>
+          I was surprised by how different conclusions could be drawn depending on which columns of the data were shown, and how
+          data was grouped. In my visualization for the proposition, I used the "board_disposition" column, grouping data based on
+          whether or not values contain the string "substantiated". Similarly, in my visualization against the proposition, I used the
+          "outcome_description" column, grouping data based on whether or not values contain the string "arrest" or "summons issued". 
+          After grouping the values for both columns, I had thought that "board_disposition" and "outcome_description" would have roughly 
+          the same distribution of "Action Taken" and "No Action Taken", as I thought substantiations would correspond to an equal amount of
+          arrests and summons issued, and unsubstantiated complaints would correspond to an equal amount of no action taken. However, this is 
+          not the case, as shown by the two visualizations. This taught me that although two columns may seem similar, they can have completely
+          different distributions of values.
+          <br>
+          <br>
+          After making my deceptive visualization, I realized that honesty and clarity are important when analyzing and visualizing
+          data ethically. Using ambiguous labels in data visualizations can trick the reader into interpreting data from a warped perspective,
+          biased depending on what the visualization is arguing for. I have also discovered that language plays a significant role in affecting
+          how a visualization can be viewed, as language with strong connotations can easily sway the reader into agreeing with a visualization's 
+          argument. A bound that I would draw to distinguish acceptable persuasive choices vs. misleading ones is using unambiguous labels that 
+          accurately describe the data, while still using language that is engaging and eye-catching. Using broad terms can hide facts about the data 
+          from the reader, which starts treading into misleading territory. I think transparency in how data is grouped is also another important
+          boundary between acceptable and misleading persuasive choices. Avoiding elaboration on how data is grouped and labeled can lead the reader to 
+          believe that a category of data is bigger or smaller than it actually is, and makes the visualization deceptive. I do not think that it is 
+          necessary for the reader to understand the fine details of the data grouping process, but the reader should be able to understand what kind of 
+          values fall into what category and for what reason.
+        </p>
       </section>
     </main>
   </body>
